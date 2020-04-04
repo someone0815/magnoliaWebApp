@@ -1,0 +1,26 @@
+{
+  "bracketPairColorizer.independentPairColors": [
+    [
+      "()",
+      [
+        "Brown"
+      ],
+      "Red" // use when right bracket is missing
+    ],
+    [
+      "[]",
+      [
+        "Brown"
+      ],
+      "Red"
+    ],
+    [
+      "<!---->",
+      [
+        "Brown"
+      ],
+      "Red"
+    ]
+  ],
+  "bracket-pair-colorizer-2.colorMode": "Independent"
+}

@@ -1,0 +1,207 @@
+:root {
+  --col-light: #fafafa;
+  --col-text-main: #272727;
+  --col-text-nofoc: #cacaca;
+  --col-grayer-light: #f5f5f5;
+  --col-text-p: #5f5f5f;
+}
+@font-face {
+  font-family: magnoliaimport;
+  src: url("Magnolia Sup_8.woff");
+}
+#textwrap {
+  width: 340px;
+}
+a {
+  vertical-align: middle;
+  line-height: normal;
+  letter-spacing: 0.015em;
+  font-family: Arial;
+  color: gray;
+  max-width: 35%;
+  text-decoration: unset;
+}
+h1 {
+  vertical-align: middle;
+  line-height: normal;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: Arial;
+  font-weight: bold;
+  color: var(--col-text-main);
+}
+pre,
+p {
+  vertical-align: middle;
+  letter-spacing: 0.015em;
+  font-family: Arial;
+  color: var(--col-text-main);
+  line-height: 1.6em;
+}
+h4,
+h3 {
+  vertical-align: middle;
+  line-height: normal;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: Arial;
+  font-weight: bold;
+  color: var(--col-text-p);
+  margin-bottom: -4px;
+}
+#buttons {
+  display: inline-grid;
+  float: left;
+}
+#options {
+  /* display: inline-block; */
+  transition: opacity 1s ease-in;
+  opacity: 0;
+  visibility: hidden;
+  justify-content: start;
+  position: relative;
+
+  width: auto;
+}
+#social {
+  display: inline-block;
+  float: right;
+  width: 50px;
+  position: absolute;
+  bottom: 185px;
+}
+#legal {
+  display: inline-block;
+  float: right !important;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  background-color: var(--col-grayer-light);
+  transition: background-color 1s;
+}
+.yx {
+  min-height: 100%;
+  position: absolute;
+  min-width: 100%;
+  display: contents;
+  /* background-color: var(--col-light); */
+  transition: background-color 1s;
+}
+#pager {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  /* background-color: var(--col-light); */
+  width: 500px;
+  height: 100%;
+  transition: background-color 0.5s;
+}
+#content {
+  height: 100%;
+  padding: 65px 65px 65px 113px;
+  overflow: scroll;
+}
+#content::-webkit-scrollbar {
+  display: none;
+}
+.nomarg,
+.fa-external-link-alt {
+  margin-right: 0px !important;
+}
+
+.example {
+  top: 0px !important;
+  opacity: 1 !important;
+  /* background-color:red; */
+}
+.default {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  transition: top 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+#container {
+  overflow: hidden;
+  z-index: 2;
+  background-color: var(--col-light);
+  left: 60px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: calc(100% - 60px);
+  height: 100%;
+
+  transition: top 0.5s ease-in, width 0.5s, height 0.5s, left 0.5s,
+    background-color 0.5s;
+  box-sizing: border-box;
+  box-shadow: 15px 0px 16px -10px rgba(0, 0, 0, 0.04);
+}
+textarea[type="text"] {
+  display: unset;
+  position: inherit;
+  top: 200px;
+  transition: font-size 0.5s, color 1.5s, top 1.5s ease-out;
+  letter-spacing: -2.15642px;
+  font-family: magnoliaimport;
+  text-align: left;
+  color: #cacaca00;
+  font-size: 8vw;
+  background-color: transparent;
+  border: 0px;
+  cursor: context-menu;
+  height: 100%;
+  scroll-behavior: smooth;
+  padding: 0.2em 0.2em 0.7em 0.2em;
+}
+.txt {
+  display: inline-block;
+}
+.txtx {
+  color: transparent;
+}
+::selection {
+  background: var(--col-grayer-light);
+}
+
+.sidebox {
+  left: -50px;
+}
+.box {
+  color: var(--col-text-p);
+  transition: left 0.5s ease-out, top 0.25s ease-out 0s,
+    box-shadow 0.25s ease-out 0s, background-color 0.5s ease 0s,
+    color 0s ease 0s;
+  width: fit-content;
+  padding: 0px 21px 0px 23px;
+  text-transform: uppercase;
+  font-family: Arial;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  border-radius: 9px;
+}
+.box:hover {
+  color: black;
+  z-index: 5;
+  background-color: #ffffff !important;
+  box-shadow: 0px 7px 20px 1px rgba(0, 0, 0, 0.09) !important;
+  transition: top 0.1s ease-out, box-shadow 0.1s ease-out, background-color 0.1s;
+  cursor: pointer;
+}
+.box:hover .txtx {
+  color: var(--col-text-p);
+}
+.fab,
+.fas {
+  margin-top: 10px;
+  margin-right: 20px;
+  line-height: 2.5 !important;
+}
